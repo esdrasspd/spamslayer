@@ -1,0 +1,162 @@
+/* Clases para el header */
+.header-container {
+    background-color: #005ea5;
+    display: flex;
+    align-items: center;
+    padding: 7px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.logo{
+    width: 50px;
+}
+
+.letra-logo {
+    font-size: 25px;
+    margin: 0;
+    background-color: #005ea5;
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.menu-link {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+.menu-link:hover {
+    text-decoration: underline;
+}
+
+/* Clases para el main */
+body {
+    background-color: #F9F9F9;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+}
+
+.titulo {
+    font-size: 50px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 1em;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 2em;
+    font-family: "Montserrat", sans-serif;
+}
+
+a{
+    font-family: "Montserrat", sans-serif;
+}
+
+.btn-probar {
+    background-color: #8B00FF;
+    color: #ffffff;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 1em 2em;
+    font-size: 1.2em;
+    border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-probar:hover {
+    background-color: #6A5ACD;
+    transform: translateY(-3px);
+  box-shadow: 0px 15px 20px rgba(106, 90, 205, 0.4);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+main div:first-child {
+    flex-basis: 50%;
+    padding-right: 2em;
+}
+
+main div:last-child {
+    flex-basis: 50%;
+}
+
+.info{
+    text-align: center;
+}
+
+.google-login-btn {
+  background-color: #4285f4;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.google-login-btn:hover {
+  background-color: #3f7ae0;
+}
+
+.center_div{
+    display: flex;
+    justify-content: center; 
+}
+
+@media only screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .letra-logo {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .menu {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .menu-link {
+        margin: 0 10px;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 1em;
+    }
+
+    main div:first-child {
+        padding-right: 0;
+        margin-bottom: 2em;
+    }
+
+}

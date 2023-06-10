@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Email - SpamSlayer</title>
+    <link rel="stylesheet" th:href="@{/css/styleform.css}" />
+</head>
+<body>
+    <header class="header-container">
+        <img th:src="@{/img/icono.png}" alt="icono" class="logo">
+        <h1 class="letra-logo">SpamSlayer</h1>
+    </header>
+    <main class="content" th:fragment="content"> 
+    <div class="container">
+        <h1>Formulario de Email</h1>
+        <form th:action="@{/predecir}" th:object="${email}" method="post">
+            <p>
+                <label for="remitente">Remitente:</label>
+                <input type="text" id="remitente" th:field="*{remitente}" required>
+            </p>
+            <p>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" th:field="*{mensaje}" required></textarea>
+            </p>
+            <p>
+                <button type="submit">Predecir Spam</button>
+            </p>
+        </form>
+        <div th:if="${resultado}">
+            <h2>Resultado:</h2>
+            <p th:text="${resultado}"></p>
+            <div th:if="${resultado == 'Es Spam'}">
+                <!-- Mostrar contenido específico para spam -->
+                <p>Este correo ha sido clasificado como spam.</p>
+            </div>
+            <div th:if="${resultado == 'No es SPAM'}">
+                <!-- Mostrar contenido específico para no spam -->
+                <p>Este correo no ha sido clasificado como spam.</p>
+            </div>
+        </div>
+        </div>
+    </main>
+    </div>
+    <div class="div_center">
+    <p>Desarrollado por: Esdras Abel Sapón Díaz</p>
+    </div>
+</body>
+</html>

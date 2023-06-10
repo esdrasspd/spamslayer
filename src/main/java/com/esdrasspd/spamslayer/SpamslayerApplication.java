@@ -1,0 +1,13 @@
+package com.esdrasspd.spamslayer;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpamslayerApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpamslayerApplication.class, args);
+	}
+
+}

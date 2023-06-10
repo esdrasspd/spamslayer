@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpamSlayer</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+   <script type="text/javascript" th:src="@{/js/google-login.js}"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap">
+
+</head>
+
+<body>
+    <header class="header-container">
+        <img th:src="@{/img/icono.png}" alt="icono" class="logo">
+        <h1 class="letra-logo">SpamSlayer</h1>
+        <nav class="menu">
+            <a href="#" class="menu-link">Inicio</a>
+            <a href="#" class="menu-link">Documentación</a>
+        </nav>
+    </header>
+    <main class="content">
+        <div class="content-section">
+            <h1 class="titulo">Bienvenido a SpamSlayer</h1>
+            <p>
+                ¡Bienvenido al mejor sistema de clasificación de spam! Nuestro sistema analiza diferentes
+                factores, como la dirección del remitente y el contenido del correo electrónico, para clasificar con
+                precisión los mensajes no deseados y mantener su bandeja de entrada libre de spam. ¡Prueba nuestro
+                sistema hoy mismo y experimenta la comodidad de una bandeja de entrada organizada y libre de spam!
+            </p>
+            <a th:href="@{/formulario}" class="google-login-btn">Probar SpamSlayer</a>
+            
+        </div>
+        
+        <div class="img">
+            <img th:src="@{/img/antispam4.png}" alt="antispam">
+        </div>
+        
+    </main>
+    <br>
+    <br>
+    <div class="center_div">
+        <p>Desarrollado por Esdras Abel Sapón Díaz</p>
+    </div>
+
+</body>
+
+</html>

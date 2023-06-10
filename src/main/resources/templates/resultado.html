@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado - SpamSlayer</title>
+    <link rel="stylesheet" th:href="@{/css/styleform.css}" />
+</head>
+<body>
+    <!-- Incluir la plantilla formulario.html -->
+    <header class="header-container">
+        <img th:src="@{/img/icono.png}" alt="icono" class="logo">
+        <h1 class="letra-logo">SpamSlayer</h1>
+    </header>
+    <div th:replace="formulario.html :: content"></div>
+    <div class="div_center">
+        <p>Desarrollado por: Esdras Abel Sapón Díaz</p>
+        </div>
+</body>
+</html>
